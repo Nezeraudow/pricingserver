@@ -22,14 +22,16 @@ public class PricingController {
 	@Autowired
 	PricingService pricingService;
 	
-	@GetMapping("/pricing/{pricingId}")
+	@GetMapping("/hello")
 	
-	public string HelloWorld(){
+	public String HelloWorld(){
 		
 		return "Hello World" ;
 	
 	}
 		
+	@GetMapping("/pricing/{pricingId}")
+	
 	public Pricing getPricingById(@PathVariable int pricingId)
 			throws PricingNotFoundException {
 		
