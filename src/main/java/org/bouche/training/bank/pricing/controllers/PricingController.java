@@ -23,6 +23,9 @@ public class PricingController {
 	PricingService pricingService;
 	
 	@GetMapping("/pricing/{pricingId}")
+	
+	public string return("Hello World");
+	
 	public Pricing getPricingById(@PathVariable int pricingId)
 			throws PricingNotFoundException {
 		
